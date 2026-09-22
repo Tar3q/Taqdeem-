@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دليل القبول الذكي للجامعات السودانية 2023 | البكالريوس</title>
+  <link rel="icon" type="image/png" href="images/leila.png">
+  <link rel="shortcut icon" type="image/png" href="images/leila.png">
+  <link rel="apple-touch-icon" href="images/leila.png">
+  <meta name="description" content="المنصة التفاعلية الشاملة لطلاب الشهادة الثانوية لاستكشاف نسب القبول بالجامعات السودانية للعام 2023، وتصنيف التخصصات الطبية والهندسية والحاسوبية، ومطابقة نسبة الطالب.">
+
+  <!-- Google Fonts: Cairo & Tajawal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Print Header for PDF / Printer -->
+  <div class="print-header">
+    <h2>جمهورية السودان - وزارة التعليم العالي والبحث العلمي</h2>
+    <h3>الإدارة العامة للقبول وتقويم وتوثيق الشهادات</h3>
+    <h4>استمارة ترتيب الرغبات الاسترشادية للقبول لمؤسسات التعليم العالي 2023م</h4>
+  </div>
+
+  <!-- Top Urgent Announcement & Developer Banner -->
+  <aside class="top-announcement-bar" id="topAnnouncementBar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-notice">
+        <span class="live-badge"><span class="live-dot"></span> إعلان هام بشندي</span>
+        <span class="top-bar-text">
+          تعلن <strong>مكتبة ليلى بوكشوب (مدينة شندي)</strong> عن توفير خدمة التقديم الإلكتروني للجامعات السودانية
+        </span>
+        <a href="https://wa.me/249900868813" target="_blank" class="top-bar-action-btn">
+          <i class="fa-brands fa-whatsapp"></i> واتساب: 0900868813
+        </a>
+      </div>
+      <div class="top-bar-dev-info">
+        <i class="fa-solid fa-code"></i>
+        <span>تطوير: <strong>طارق أحمد الشيخ منصور</strong></span>
+        <a href="tel:0900868813" class="top-bar-phone-link"><i class="fa-solid fa-phone"></i> 0900868813</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="brand-title">
+          <span class="main-title">دليل القبول</span>
+          <span class="sub-title">الجامعات السودانية 2023</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#matcherSection" class="nav-link active">
+          <i class="fa-solid fa-calculator"></i> حاسبة القبول
+        </a>
+        <a href="#resultsSection" class="nav-link">
+          <i class="fa-solid fa-list-check"></i> دليل الكليات
+        </a>
+        <a href="#tipsSection" class="nav-link">
+          <i class="fa-solid fa-lightbulb"></i> نصائح التقديم
+        </a>
+        <a href="#adSection" class="nav-link">
+          <i class="fa-solid fa-bullhorn"></i> خدمة التقديم بشندي
+        </a>
+        <a href="#devSection" class="nav-link">
+          <i class="fa-solid fa-user-tie"></i> المطور
+        </a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Wishlist Nav Button -->
+        <button class="btn-wishlist-nav" id="wishlistNavBtn" title="قائمة رغباتي">
+          <i class="fa-solid fa-heart"></i>
+          <span>رغباتي</span>
+          <span class="badge-counter" id="wishlistNavCount">0</span>
+        </button>
+
+        <!-- Dark/Light Theme Toggle -->
+        <button class="btn-icon-nav" id="themeToggleBtn" title="تبديل المظهر">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-pill">
+        <i class="fa-solid fa-bolt"></i>
+        <span>بناءً على نتائج القبول الرسمية المعتمدة لعام 2023م</span>
+      </div>
+
+      <h1 class="hero-title">
+        دليلك الذكي الشامل للقبول في <br>
+        <span class="highlight-gradient">الجامعات والكليات السودانية</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        اكتشف الكليات المتاحة لنسبتك، وتصفح مجالات العمل وسوق التوظيف، ورتّب رغباتك للتقديم الإلكتروني في القبول العام، والولائي، وشهادات المغتربين والشهادة السعودية.
+      </p>
+
+      <!-- Quick Stats Grid -->
+      <div class="hero-stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon" style="background: rgba(16, 185, 129, 0.15); color: var(--primary);">
+            <i class="fa-solid fa-book-bookmark"></i>
+          </div>
+          <div class="stat-info">
+            <div class="stat-number" id="statProgramsCount">2,113</div>
+            <div class="stat-label">تخصص وبرنامج أكاديمي</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon" style="background: rgba(2, 132, 199, 0.15); color: var(--secondary);">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+          <div class="stat-info">
+            <div class="stat-number" id="statUnisCount">95+</div>
+            <div class="stat-label">جامعة وكلية معتمدة</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon" style="background: rgba(124, 58, 237, 0.15); color: var(--accent-purple);">
+            <i class="fa-solid fa-map-location-dot"></i>
+          </div>
+          <div class="stat-info">
+            <div class="stat-number" id="statStatesCount">18</div>
+            <div class="stat-label">ولاية ومحافظة مغطاة</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon" style="background: rgba(245, 158, 11, 0.15); color: var(--accent-gold);">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <div class="stat-info">
+            <div class="stat-number">10</div>
+            <div class="stat-label">قطاعات تخصصية كبرى</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Featured Showcase: Leila Bookshop Ad & Developer -->
+  <section class="container top-featured-showcase" id="adAndDevSection">
+    <div class="promo-grid">
+      <!-- 1. Advertisement Card: Leila Bookshop -->
+      <div class="promo-card ad-card-highlight" id="adSection">
+        <div class="ad-badge-ribbon">
+          <i class="fa-solid fa-bullhorn"></i> إعلان هام وحصري: خدمة التقديم الإلكتروني للجامعات السودانية
+        </div>
+        <div class="ad-card-inner">
+          <div class="ad-logo-wrap">
+            <img src="images/leila.png" alt="شعار مكتبة ليلى بوكشوب" class="ad-logo-img" />
+          </div>
+          <div class="ad-details">
+            <div class="ad-header-flex">
+              <h3 class="ad-main-title">مكتبة ليلى بوكشوب - مدينة شندي</h3>
+              <span class="ad-verified-tag"><i class="fa-solid fa-certificate"></i> مركز معتمد</span>
+            </div>
+            <p class="ad-service-highlight">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>تعلن المكتبة عن فتح باب <strong>التقديم الإلكتروني وتنسيق وترتيب الرغبات الجامعية</strong> للشهادة السودانية بواسطة كادر متخصص وخبير بإجراءات القبول.</span>
+            </p>
+            <div class="ad-info-list">
+              <div class="ad-info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span><strong>الموقع:</strong> شندي - السوق الكبير - شقق ود الناظر جنوب المجمع الطبي جامعة شندي</span>
+              </div>
+              <div class="ad-info-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span><strong>واتساب / اتصال:</strong> <a href="https://wa.me/249900868813" target="_blank" class="ad-phone-link">0900868813</a></span>
+              </div>
+            </div>
+            <div class="ad-action-btns">
+              <a href="https://wa.me/249900868813" target="_blank" class="btn-ad-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب للتقديم
+              </a>
+              <a href="https://maps.app.goo.gl/Ma2AT831k7Xarn446" target="_blank" rel="noopener noreferrer" class="btn-ad-map">
+                <i class="fa-solid fa-map-location-dot"></i> موقع المكتبة على الخريطة
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Developer Card: طارق أحمد الشيخ منصور -->
+      <div class="promo-card dev-card-highlight" id="devSection">
+        <div class="dev-badge-ribbon">
+          <i class="fa-solid fa-code"></i> عن مصمم ومطور المنصة
+        </div>
+        <div class="dev-card-inner">
+          <div class="dev-avatar-wrap">
+            <img src="images/dev.png" alt="طارق أحمد الشيخ منصور" class="dev-avatar-img" />
+            <div class="dev-status-indicator" title="متاح للتواصل"></div>
+          </div>
+          <div class="dev-details">
+            <div class="dev-header-flex">
+              <h3 class="dev-name">طارق أحمد الشيخ منصور</h3>
+              <span class="dev-verified-tag"><i class="fa-solid fa-shield-halved"></i> مطور النظام</span>
+            </div>
+            <p class="dev-role">
+              <i class="fa-solid fa-laptop-code"></i> مطور ومصمم منصة دليل القبول الجامعي الذكي
+            </p>
+            <p class="dev-bio">
+              صُممت هذه المنصة بمبادرة وطنية لخدمة ومساندة طلاب الشهادة الثانوية السودانية وأسرهم في حساب فرص القبول واختيار المسارات الأكاديمية الأمثل بناءً على البيانات الرسمية.
+            </p>
+            <div class="dev-contact-actions">
+              <a href="tel:0900868813" class="btn-dev-call">
+                <i class="fa-solid fa-phone"></i> اتصال: 0900868813
+              </a>
+              <a href="https://wa.me/249900868813" target="_blank" class="btn-dev-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> مراسلة واتساب
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Feature: Smart Admission Matcher & Calculator -->
+  <section class="matcher-section" id="matcherSection">
+    <div class="container">
+      <div class="matcher-card">
+        <div class="matcher-header">
+          <div class="matcher-title-wrap">
+            <div class="matcher-badge-icon">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+            <div>
+              <h2>أدخل نسبتك ومساقك لمعرفة كلياتك المؤهلة</h2>
+              <p>ستقوم المنصة بحساب ومطابقة جميع التخصصات التي تقبل نسبتك أو تقع في نطاق منافستك فورياً</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Inputs Grid -->
+        <div class="matcher-form-grid">
+          <!-- Score Input (Number Only) -->
+          <div class="input-group">
+            <label class="input-label" for="scoreNumberInput">
+              <i class="fa-solid fa-percent" style="color: var(--primary);"></i>
+              <span>نسبة الطالب في الشهادة الثانوية</span>
+            </label>
+            <div class="clean-number-input-wrapper">
+              <input type="number" id="scoreNumberInput" class="clean-score-input" min="40" max="100" step="0.1" value="85.0" placeholder="مثال: 85.0">
+              <span class="clean-score-unit">%</span>
+            </div>
+          </div>
+
+          <!-- Academic Track -->
+          <div class="input-group">
+            <label class="input-label">المساق الأكاديمي للشهادة</label>
+            <div class="custom-select-wrapper">
+              <select id="trackSelect" class="custom-select">
+                <option value="all">كافة المساقات الأكاديمية</option>
+                <option value="علمي أحياء">علمي أحياء (المسار الطبي والصحي)</option>
+                <option value="علمي هندسية">علمي هندسية (المسار الهندسي والتقني)</option>
+                <option value="أدبي">المساق الأدبي والإنساني</option>
+              </select>
+              <i class="fa-solid fa-chevron-down select-arrow"></i>
+            </div>
+          </div>
+
+          <!-- Admission Type -->
+          <div class="input-group">
+            <label class="input-label">مسار ونوع القبول</label>
+            <div class="custom-select-wrapper">
+              <select id="admissionTypeSelect" class="custom-select">
+                <option value="all">كافة مسارات القبول</option>
+                <option value="القبول العام">القبول العام (البكالريوس)</option>
+                <option value="القبول الولائي">القبول الولائي (حسب الولاية)</option>
+                <option value="شهادة السعودية">شهادة السعودية والشهادات العربية</option>
+              </select>
+              <i class="fa-solid fa-chevron-down select-arrow"></i>
+            </div>
+          </div>
+
+          <!-- State Selection (Available Only for Walai Admission) -->
+          <div class="input-group" id="stateInputGroup">
+            <label class="input-label" for="stateSelect">
+              <i class="fa-solid fa-map-location-dot" style="color: var(--accent-gold);"></i>
+              <span>الولاية الجغرافية</span>
+              <span class="state-hint-badge" id="stateHintBadge">(متاح للقبول الولائي فقط)</span>
+            </label>
+            <div class="custom-select-wrapper state-select-wrapper disabled-state" id="stateSelectWrapper">
+              <select id="stateSelect" class="custom-select" disabled>
+                <option value="all">اختر الولاية للقبول الولائي...</option>
+                <!-- Populated dynamically -->
+              </select>
+              <i class="fa-solid fa-chevron-down select-arrow"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Student Diagnosis Banner -->
+        <div class="match-diagnosis-banner">
+          <div class="diagnosis-text">
+            <div class="diagnosis-icon">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <div class="diagnosis-message">
+              <h4 id="diagMessage">نسبتك تمنحك خيارات متنوعة في القبول</h4>
+              <p id="diagSubMessage">جاري تحليل بيانات القبول لتحديد الفرص المتاحة والمفاضلة...</p>
+            </div>
+          </div>
+
+          <div class="diagnosis-stats">
+            <div class="diag-stat-item">
+              <span class="diag-stat-number green" id="statEligibleCount">0</span>
+              <span class="diag-stat-label">مؤهل للقبول بقوة</span>
+            </div>
+            <div class="diag-stat-item">
+              <span class="diag-stat-number yellow" id="statCompetitiveCount">0</span>
+              <span class="diag-stat-label">في نطاق المنافسة</span>
+            </div>
+            <div class="diag-stat-item">
+              <span class="diag-stat-number blue" id="statTotalMatches">0</span>
+              <span class="diag-stat-label">إجمالي الفرص</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter & Search Toolbar Section -->
+  <section class="filter-section" id="resultsSection">
+    <div class="container">
+      <!-- Universal Live Search Bar -->
+      <div class="search-bar-card">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="searchInput" class="search-input" placeholder="ابحث باسم الكلية أو التخصص أو الجامعة (مثلاً: مختبرات، هندسة مدنية، الخرطوم، شندي، قانون...)...">
+        <button id="clearSearchBtn" class="clear-search-btn" title="مسح البحث">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Category Filter Pills (Horizontal Scroll) -->
+      <div class="category-pills-wrap" id="categoryPillsWrap">
+        <button class="category-pill-btn active" data-category="all">
+          <i class="fa-solid fa-border-all"></i>
+          <span>كافة التخصصات</span>
+        </button>
+        <button class="category-pill-btn" data-category="طبية وصحية">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <span>العلوم الطبية والصحية</span>
+        </button>
+        <button class="category-pill-btn" data-category="هندسية ومعمارية">
+          <i class="fa-solid fa-compass-drafting"></i>
+          <span>الهندسة والعمارة</span>
+        </button>
+        <button class="category-pill-btn" data-category="حاسوب وتقنية معلومات">
+          <i class="fa-solid fa-code"></i>
+          <span>الحاسوب والبرمجيات</span>
+        </button>
+        <button class="category-pill-btn" data-category="علوم أساسية وتطبيقية">
+          <i class="fa-solid fa-flask-vial"></i>
+          <span>العلوم الأساسية</span>
+        </button>
+        <button class="category-pill-btn" data-category="إدارية واقتصادية">
+          <i class="fa-solid fa-chart-line"></i>
+          <span>الإدارية والمالية</span>
+        </button>
+        <button class="category-pill-btn" data-category="قانون وشريعة">
+          <i class="fa-solid fa-scale-balanced"></i>
+          <span>القانون والشريعة</span>
+        </button>
+        <button class="category-pill-btn" data-category="لغات وآداب وإنسانيات">
+          <i class="fa-solid fa-language"></i>
+          <span>اللغات والآداب</span>
+        </button>
+        <button class="category-pill-btn" data-category="علوم تربوية">
+          <i class="fa-solid fa-chalkboard-user"></i>
+          <span>العلوم التربوية</span>
+        </button>
+        <button class="category-pill-btn" data-category="زراعية وبيطرية وبيئية">
+          <i class="fa-solid fa-seedling"></i>
+          <span>الزراعة والبيطرة</span>
+        </button>
+        <button class="category-pill-btn" data-category="إعلام وفنون وسياحة">
+          <i class="fa-solid fa-camera-retro"></i>
+          <span>الإعلام والفنون</span>
+        </button>
+      </div>
+
+      <!-- Toggle Button for Advanced Filters -->
+      <div class="classify-toggle-wrapper">
+        <button type="button" class="classify-toggle-btn" id="toggleFiltersBtn" aria-expanded="false">
+          <div class="toggle-btn-label">
+            <i class="fa-solid fa-sliders"></i>
+            <span>خيارات التصفية والمفاضلة المتقدمة (نسبة القبول، الكلية، المساق)</span>
+            <span class="active-filter-dot" id="activeFilterDot" style="display: none;"></span>
+          </div>
+          <div class="toggle-chevron-wrap">
+            <span class="toggle-text" id="toggleFilterText">إظهار الفلاتر</span>
+            <i class="fa-solid fa-chevron-down" id="toggleFilterChevron"></i>
+          </div>
+        </button>
+      </div>
+
+      <!-- Classification Tri-Filter Strip (Collapsible) -->
+      <div class="classify-strip collapsed" id="classifyStrip">
+
+        <!-- 1. By Score Range (نسبة القبول) -->
+        <div class="classify-group">
+          <span class="classify-label">
+            <i class="fa-solid fa-percent"></i> نسبة القبول
+          </span>
+          <div class="classify-btns" id="scoreRangeGroup">
+            <button class="classify-btn active" data-range="all">الكل</button>
+            <button class="classify-btn highlight-score-btn" data-range="my-score-down" id="btnMyScoreDown" title="مفاضلة الكليات المتاحة من نسبتك فما دون">
+              <i class="fa-solid fa-arrow-down-wide-short"></i> من نسبتي فما دون (≤ <span id="classifyStudentScoreText">85.0%</span>)
+            </button>
+            <button class="classify-btn" data-range="90-100">
+              <i class="fa-solid fa-star"></i> 90%+ ممتاز
+            </button>
+            <button class="classify-btn" data-range="80-90">
+              <i class="fa-solid fa-circle-check"></i> 80 – 90% جيد جداً
+            </button>
+            <button class="classify-btn" data-range="70-80">
+              <i class="fa-solid fa-circle-half-stroke"></i> 70 – 80% جيد
+            </button>
+            <button class="classify-btn" data-range="60-70">
+              <i class="fa-solid fa-circle"></i> 60 – 70% مقبول
+            </button>
+            <button class="classify-btn" data-range="0-60">
+              <i class="fa-solid fa-minus"></i> أقل من 60%
+            </button>
+          </div>
+          <div class="classify-custom-score-wrap">
+            <span class="classify-input-label"><i class="fa-solid fa-sliders"></i> مفاضلة من نسبة مخصصة فما دون:</span>
+            <div class="custom-score-controls">
+              <div class="input-symbol-wrap">
+                <input type="number" id="customScoreDownInput" class="classify-number-input" min="40" max="100" step="0.1" placeholder="مثال: 85.0" />
+                <span class="input-symbol">%</span>
+              </div>
+              <button type="button" class="classify-action-btn apply-btn" id="applyCustomScoreDownBtn">
+                <i class="fa-solid fa-filter"></i> تطبيق المفاضلة
+              </button>
+              <button type="button" class="classify-action-btn reset-btn" id="clearCustomScoreDownBtn" title="إلغاء المفاضلة المخصصة">
+                <i class="fa-solid fa-rotate-left"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. By College Name (حسب الكلية) -->
+        <div class="classify-group">
+          <span class="classify-label">
+            <i class="fa-solid fa-arrow-down-a-z"></i> حسب الكلية
+          </span>
+          <div class="classify-btns">
+            <button class="classify-btn" id="sortAlphaAZ" onclick="window.setSortAlpha('asc')">
+              <i class="fa-solid fa-arrow-down-a-z"></i> أ ← ي
+            </button>
+            <button class="classify-btn" id="sortAlphaZA" onclick="window.setSortAlpha('desc')">
+              <i class="fa-solid fa-arrow-up-z-a"></i> ي ← أ
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. By Academic Track (المساق الأكاديمي) -->
+        <div class="classify-group">
+          <span class="classify-label">
+            <i class="fa-solid fa-graduation-cap"></i> المساق الأكاديمي
+          </span>
+          <div class="classify-btns" id="trackFilterGroup">
+            <button class="classify-btn active" data-track="all">
+              <i class="fa-solid fa-border-all"></i> الكل
+            </button>
+            <button class="classify-btn" data-track="علمي أحياء">
+              🔬 علمي أحياء
+            </button>
+            <button class="classify-btn" data-track="علمي هندسية">
+              📐 علمي هندسية
+            </button>
+            <button class="classify-btn" data-track="أدبي">
+              📚 أدبي
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Secondary Filters & View Bar -->
+      <div class="secondary-filters-bar">
+        <div class="filters-dropdowns-group">
+          <!-- Specific University -->
+          <div class="custom-select-wrapper">
+            <select id="uniSelect" class="compact-select">
+              <option value="all">كافة الجامعات والكليات</option>
+              <!-- Populated dynamically -->
+            </select>
+            <i class="fa-solid fa-chevron-down select-arrow"></i>
+          </div>
+
+          <!-- Gender Filter -->
+          <div class="custom-select-wrapper">
+            <select id="genderSelect" class="compact-select">
+              <option value="all">الفئة (مشترك / طلاب / طالبات)</option>
+              <option value="مشترك">متاح للجميع (مشترك)</option>
+              <option value="طلاب فقط">طلاب فقط (بنين)</option>
+              <option value="طالبات فقط">طالبات فقط (بنات)</option>
+            </select>
+            <i class="fa-solid fa-chevron-down select-arrow"></i>
+          </div>
+
+          <!-- Institution Type -->
+          <div class="custom-select-wrapper">
+            <select id="institutionSelect" class="compact-select">
+              <option value="all">نوع المؤسسة (حكومية / خاصة)</option>
+              <option value="حكومية">جامعات حكومية</option>
+              <option value="أهلية خاصة">جامعات وكليات أهلية وخاصة</option>
+            </select>
+            <i class="fa-solid fa-chevron-down select-arrow"></i>
+          </div>
+
+          <!-- Sort Filter -->
+          <div class="custom-select-wrapper">
+            <select id="sortSelect" class="compact-select">
+              <option value="closest" selected>الترتيب: الأقرب لنسبتي الحالية</option>
+              <option value="cutoff-desc">الترتيب: الأعلى نسبة أولاً</option>
+              <option value="cutoff-asc">الترتيب: الأقل نسبة أولاً</option>
+              <option value="alpha">الترتيب: أبجدياً</option>
+            </select>
+            <i class="fa-solid fa-chevron-down select-arrow"></i>
+          </div>
+        </div>
+
+        <div class="view-options-group">
+          <div class="results-counter-text" id="resultsCounter">
+            جاري تحميل الكليات...
+          </div>
+          <div class="view-toggle-btns">
+            <button class="view-btn active" id="viewGridBtn" title="عرض بطاقات شبكية">
+              <i class="fa-solid fa-grip"></i>
+            </button>
+            <button class="view-btn" id="viewTableBtn" title="عرض جدول مدمج">
+              <i class="fa-solid fa-table-list"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Grid Container -->
+      <div id="resultsGrid" class="results-grid" style="margin-top: 1.5rem;">
+        <!-- Program cards dynamically injected here -->
+      </div>
+
+      <!-- Pagination Buttons -->
+      <div class="pagination-wrapper" id="paginationWrap">
+        <!-- Pagination injected here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Educational Guidelines Section -->
+  <section class="container" id="tipsSection" style="margin-bottom: 4rem;">
+    <div style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: 2.25rem; box-shadow: var(--shadow-card);">
+      <div style="display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1.25rem;">
+        <div style="width: 44px; height: 44px; border-radius: var(--radius-md); background: rgba(245, 158, 11, 0.15); color: var(--accent-gold); display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">
+          <i class="fa-solid fa-lightbulb"></i>
+        </div>
+        <div>
+          <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--text-main);">نصائح ذهبية لملء استمارة التقديم الإلكتروني للجامعات السودانية</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted);">إرشادات هامة من خبراء القبول لضمان اختيار أمثل وعدم إهدار مقعدك الجامعي</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem;">
+        <div class="detail-card-box">
+          <h4><i class="fa-solid fa-1"></i> استراتيجية ترتيب الرغبات</h4>
+          <p>قسّم رغباتك العشرة إلى 3 مستويات: الرغبات الأولى (طموحة تنافسية)، الرغبات الوسطى (مطابقة لنسبتك تماماً)، والرغبات الأخيرة (آمنة ومضمونة بنسبة أقل من نسبتك لتجنب رفض القبول).</p>
+        </div>
+        <div class="detail-card-box">
+          <h4><i class="fa-solid fa-2"></i> الانتباه لدرجات المفاضلة</h4>
+          <p>عند تساوي نسب الطلاب في الكلية الأخيرة يتم اللجوء لمجموع مواد المفاضلة (مثلاً مادة الأحياء في الطب أو الرياضيات في الهندسة)، فاحرص على مراجعة درجات موادك المؤهلة.</p>
+        </div>
+        <div class="detail-card-box">
+          <h4><i class="fa-solid fa-3"></i> استثمار فرص القبول الولائي</h4>
+          <p>القبول الولائي يمنح أبناء الولايات فرصاً استثنائية بنسب أقل من القبول العام في كليات الطب والهندسة والعلوم بنفس الجامعة؛ تأكد من التقديم في ولاية شهادتك.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive University & Major Modal -->
+  <div class="modal-overlay" id="detailModal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <button class="modal-close-btn" id="modalCloseBtn" title="إغلاق">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <span class="modal-header-badge" id="modalHeaderBadge">
+          <i class="fa-solid fa-graduation-cap"></i> قطاع الكلية
+        </span>
+        <h2 class="modal-title" id="modalTitle">اسم الكلية والتخصص</h2>
+        <div class="modal-uni-title" id="modalUniTitle">
+          <i class="fa-solid fa-building-columns"></i> جامعة الخرطوم
+        </div>
+      </div>
+
+      <!-- Modal Tabs Nav -->
+      <div class="modal-tabs-nav">
+        <button class="modal-tab-btn active" data-tab="tab-major">
+          <i class="fa-solid fa-book-open"></i>
+          <span>عن التخصص والمناهج</span>
+        </button>
+        <button class="modal-tab-btn" data-tab="tab-careers">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>مجالات وسوق العمل</span>
+        </button>
+        <button class="modal-tab-btn" data-tab="tab-university">
+          <i class="fa-solid fa-landmark"></i>
+          <span>عن الصرح الجامعي</span>
+        </button>
+        <button class="modal-tab-btn" data-tab="tab-admission">
+          <i class="fa-solid fa-chart-line"></i>
+          <span>شروط ومؤشرات القبول</span>
+        </button>
+      </div>
+
+      <!-- Modal Body Tab Contents -->
+      <div class="modal-body">
+        <div class="modal-tab-content active" id="tab-major">
+          <!-- Populated dynamically -->
+        </div>
+        <div class="modal-tab-content" id="tab-careers">
+          <!-- Populated dynamically -->
+        </div>
+        <div class="modal-tab-content" id="tab-university">
+          <!-- Populated dynamically -->
+        </div>
+        <div class="modal-tab-content" id="tab-admission">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button class="btn-primary-action" id="modalAddWishlistBtn">
+          <i class="fa-regular fa-heart"></i>
+          <span>إضافة لقائمة رغباتي</span>
+        </button>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-secondary-action" id="modalVisitWebsiteBtn">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <span>زيارة الموقع الرسمي</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sudanese 10-Preferences Wishlist Drawer -->
+  <div class="drawer-overlay" id="wishlistDrawer">
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <h3>
+          <i class="fa-solid fa-heart" style="color: var(--accent-rose);"></i>
+          <span>قائمة رغباتي للتقديم الإلكتروني</span>
+          <span class="badge-counter" id="wishlistDrawerCount">0</span>
+        </h3>
+        <button class="drawer-close-btn" id="drawerCloseBtn" title="إغلاق">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="drawer-body">
+        <div class="wishlist-items-list" id="wishlistItemsList">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <div class="drawer-footer">
+        <button class="btn-primary-action" id="printWishlistBtn" style="justify-content: center; width: 100%;">
+          <i class="fa-solid fa-print"></i>
+          <span>طباعة استمارة ترتيب الرغبات</span>
+        </button>
+        <button class="btn-secondary-action" id="clearWishlistBtn" style="justify-content: center; width: 100%; color: var(--danger);">
+          <i class="fa-solid fa-trash-can"></i>
+          <span>إفراغ قائمة الرغبات</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notifications Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Footer -->
+  <footer style="background: var(--bg-surface); border-top: 1px solid var(--border); padding: 3rem 0 2rem; margin-top: 5rem;">
+    <div class="container" style="text-align: center;">
+      <div style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 1rem;">
+        <div class="brand-icon" style="width: 36px; height: 36px; font-size: 1.1rem;">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <h4 style="font-size: 1.2rem; font-weight: 800; color: var(--text-main);">منصة دليل القبول الذكي للجامعات والكليات السودانية</h4>
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 600px; margin: 0 auto 1.5rem;">
+        بيانات رسمية مستخرجة وموثقة من كتيّب القبول الصادر عن الإدارة العامة للقبول وتقويم وتوثيق الشهادات - وزارة التعليم العالي والبحث العلمي لجمهورية السودان لعام 2023م.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; font-size: 0.85rem; font-weight: 700; color: var(--primary);">
+        <a href="http://admission.gov.sd" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-link"></i> البوابة الإلكترونية للتقديم الرسمي (admission.gov.sd)
+        </a>
+        <a href="http://mohe.gov.sd" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-building"></i> موقع وزارة التعليم العالي والبحث العلمي
+        </a>
+      </div>
+      <div style="font-size: 0.8rem; color: var(--text-light); border-top: 1px solid var(--border); padding-top: 1.25rem;">
+        جميع الحقوق محفوظة © 2023 - 2026م | صُمم لمساندة طلاب الشهادة الثانوية السودانية وأسرهم
+      </div>
+      <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.75rem;">
+        <i class="fa-solid fa-code"></i> تصميم وبرمجة: <a href="#devSection" style="color: var(--primary); font-weight: 800;">طارق أحمد الشيخ منصور</a> (0900868813) | بالتعاون مع <a href="#adSection" style="color: #d97706; font-weight: 800;">مكتبة ليلى بوكشوب - شندي</a> لخدمات التقديم الإلكتروني
+      </div>
+    </div>
+  </footer>
+
+  <!-- Compiled Data Bundle -->
+  <script src="js/data.js"></script>
+  <!-- Application Core -->
+  <script src="js/app.js"></script>
+</body>
+</html>
